@@ -27,3 +27,4 @@ GymPass Style App
 - Todas listas de dados precisam estar paginadas com 20 items por página
 - O usuário deve ser identificado por JWT
 
+
