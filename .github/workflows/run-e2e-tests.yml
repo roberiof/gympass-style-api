@@ -12,7 +12,7 @@ jobs:
         image: "bitnami/postgresql"
         ports:
           - "8080:5432"
-        environment:
+        env:
           - POSTGRESQL_USERNAME=docker
           - POSTGRESQL_PASSWORD=docker
           - POSTGRESQL_DATABAES=gympass
