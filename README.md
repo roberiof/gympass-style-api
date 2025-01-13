@@ -1,30 +1,27 @@
-GymPass Style App
+# GymPass Style App
 
+## Functional Requirements (FR)
+- Users must be able to register.  
+- Users must be able to authenticate.  
+- Users must be able to retrieve their logged-in profile.  
+- Users must be able to get the number of check-ins they have made.  
+- Users must be able to view their check-in history.  
+- Users must be able to search for nearby gyms.  
+- Users must be able to search for gyms by name.  
+- Users must be able to check in at a gym.  
+- It must be possible to validate a user's check-in.  
+- Admins must be able to register new gyms.  
 
-# RF (Requisitos Funcionais) 
-- Deve ser possível se cadastrar;
-- Deve ser possível se autenticar; 
-- Deve ser possível obter o perfil de usuário logado; 
-- Deve ser possível obter o número de check-ins realizados pelo usuário logado;
-- Deve ser possível o usuário obter o histórico de check-ins;
-- Deve ser possível buscar academias próximas; 
-- Deve ser possível usuário buscar academias pelo nome; 
-- Deve ser possível o usuário fazer check-in na academia; 
-- Deve ser possível validar o check-in do usuário; 
-- Deve ser possível cadastrar uma academia;  
+## Business Rules (BR)
+- Users cannot register with duplicate email addresses.  
+- Users cannot perform more than one check-in per day at the same gym.  
+- Users cannot check in unless they are within 100 meters of the gym.  
+- Check-ins can only be validated within 20 minutes of creation.  
+- Only administrators can validate check-ins.  
+- Only administrators can register new gyms.  
 
-# RN (Regras de Negócio) 
-- O usuário não deve poder se cadastrar com e-mail duplicado;
-- O usuário não pode fazer mais de um check-in no mesmo dia; 
-- O usuário não pode fazer check-in se não tiver a pelo menos 100m da academia;
-- O check-in só pode ser validado em até 20min de ser criado;
-- O check-in só pode ser validado por administradores;
-- A academia só pode ser cadastrada por administradores;
-
-# RNF (Requisitos não Funcionais) 
-- A senha do usuário precisa estar criptografada
-- Os dados da aplicação precisam estar persistidos em um banco PostgreeSQL
-- Todas listas de dados precisam estar paginadas com 20 items por página
-- O usuário deve ser identificado por JWT
-
-
+## Non-Functional Requirements (NFR)
+- User passwords must be encrypted.  
+- Application data must be persisted in a PostgreSQL database.  
+- All data lists must be paginated with 20 items per page.  
+- Users must be identified using JWT.  
