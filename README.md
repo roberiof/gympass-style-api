@@ -25,3 +25,11 @@
 - Application data must be persisted in a PostgreSQL database.  
 - All data lists must be paginated with 20 items per page.  
 - Users must be identified using JWT.  
+
+
+## 🚀 Technologies Used
+* **[Docker](https://www.docker.com/)**  
+* **[Vitest](https://vitest.dev/)**  
+* **[Typescript](https://www.typescriptlang.org/)**  
+* **[Prisma](https://www.prisma.io/)**  
+* **[Fastify](https://www.fastify.io/)**  
